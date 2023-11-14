@@ -1,0 +1,17 @@
+{
+    "name": "arokettu/datetime-round",
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Arokettu\\DateTime\\": "src"
+        }
+    },
+    "require": {
+        "php": "^7.1 | ^8.0"
+    },
+    "require-dev": {
+        "nesbot/carbon": "^2.71"
+    }
+}
