@@ -40,9 +40,7 @@ final class DateTimeTruncate
             $m  = $rounding <= self::TO_MINUTES ? \intval($dateTime->format('i')) : 0;
             $h  = \intval($dateTime->format('H'));
 
-            $dateTime = $dateTime->setTime($h, $m, $s, $ms * 1000);
-
-            return $dateTime;
+            return $dateTime->setTime($h, $m, $s, $ms * 1000);
         }
 
         $dateTime = $dateTime->setTime(0, 0, 0, 0);
@@ -65,53 +63,93 @@ final class DateTimeTruncate
         return $dateTime->setDate($y, $m, 1);
     }
 
-    public static function toMicroseconds(DateTimeInterface $innerClock): DateTimeInterface
+    /**
+     * @param T $dateTime
+     * @return T
+     */
+    public static function toMicroseconds(DateTimeInterface $dateTime): DateTimeInterface
     {
-        return self::truncate($innerClock, self::TO_MICROSECONDS);
+        return self::truncate($dateTime, self::TO_MICROSECONDS);
     }
 
-    public static function toMilliseconds(DateTimeInterface $innerClock): DateTimeInterface
+    /**
+     * @param T $dateTime
+     * @return T
+     */
+    public static function toMilliseconds(DateTimeInterface $dateTime): DateTimeInterface
     {
-        return self::truncate($innerClock, self::TO_MILLISECONDS);
+        return self::truncate($dateTime, self::TO_MILLISECONDS);
     }
 
-    public static function toSeconds(DateTimeInterface $innerClock): DateTimeInterface
+    /**
+     * @param T $dateTime
+     * @return T
+     */
+    public static function toSeconds(DateTimeInterface $dateTime): DateTimeInterface
     {
-        return self::truncate($innerClock, self::TO_SECONDS);
+        return self::truncate($dateTime, self::TO_SECONDS);
     }
 
-    public static function toMinutes(DateTimeInterface $innerClock): DateTimeInterface
+    /**
+     * @param T $dateTime
+     * @return T
+     */
+    public static function toMinutes(DateTimeInterface $dateTime): DateTimeInterface
     {
-        return self::truncate($innerClock, self::TO_MINUTES);
+        return self::truncate($dateTime, self::TO_MINUTES);
     }
 
-    public static function toHours(DateTimeInterface $innerClock): DateTimeInterface
+    /**
+     * @param T $dateTime
+     * @return T
+     */
+    public static function toHours(DateTimeInterface $dateTime): DateTimeInterface
     {
-        return self::truncate($innerClock, self::TO_HOURS);
+        return self::truncate($dateTime, self::TO_HOURS);
     }
 
-    public static function toDays(DateTimeInterface $innerClock): DateTimeInterface
+    /**
+     * @param T $dateTime
+     * @return T
+     */
+    public static function toDays(DateTimeInterface $dateTime): DateTimeInterface
     {
-        return self::truncate($innerClock, self::TO_DAYS);
+        return self::truncate($dateTime, self::TO_DAYS);
     }
 
-    public static function toWeeks(DateTimeInterface $innerClock): DateTimeInterface
+    /**
+     * @param T $dateTime
+     * @return T
+     */
+    public static function toWeeks(DateTimeInterface $dateTime): DateTimeInterface
     {
-        return self::truncate($innerClock, self::TO_WEEKS);
+        return self::truncate($dateTime, self::TO_WEEKS);
     }
 
-    public static function toMonths(DateTimeInterface $innerClock): DateTimeInterface
+    /**
+     * @param T $dateTime
+     * @return T
+     */
+    public static function toMonths(DateTimeInterface $dateTime): DateTimeInterface
     {
-        return self::truncate($innerClock, self::TO_MONTHS);
+        return self::truncate($dateTime, self::TO_MONTHS);
     }
 
-    public static function toYears(DateTimeInterface $innerClock): DateTimeInterface
+    /**
+     * @param T $dateTime
+     * @return T
+     */
+    public static function toYears(DateTimeInterface $dateTime): DateTimeInterface
     {
-        return self::truncate($innerClock, self::TO_YEARS);
+        return self::truncate($dateTime, self::TO_YEARS);
     }
 
-    public static function toIsoYears(DateTimeInterface $innerClock): DateTimeInterface
+    /**
+     * @param T $dateTime
+     * @return T
+     */
+    public static function toIsoYears(DateTimeInterface $dateTime): DateTimeInterface
     {
-        return self::truncate($innerClock, self::TO_ISO_YEARS);
+        return self::truncate($dateTime, self::TO_ISO_YEARS);
     }
 }
