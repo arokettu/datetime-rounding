@@ -23,6 +23,7 @@
         "nesbot/carbon": "^2.71",
         "phpunit/phpunit": ">= 7.5 < 10",
         "sandfox.dev/code-standard": "^1.2023.06.29",
-        "squizlabs/php_codesniffer": "*"
+        "squizlabs/php_codesniffer": "*",
+        "vimeo/psalm": "^4 | ^5"
     }
 }

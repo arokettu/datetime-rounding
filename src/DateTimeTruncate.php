@@ -6,9 +6,6 @@ namespace Arokettu\DateTime;
 
 use DateTimeInterface;
 
-/**
- * @template T of DateTimeInterface
- */
 final class DateTimeTruncate
 {
     public const TO_MICROSECONDS = 0;
@@ -23,6 +20,7 @@ final class DateTimeTruncate
     public const TO_ISO_YEARS = 9;
 
     /**
+     * @template T of DateTimeInterface
      * @param T $dateTime
      * @return T
      */
@@ -64,6 +62,7 @@ final class DateTimeTruncate
     }
 
     /**
+     * @template T of DateTimeInterface
      * @param T $dateTime
      * @return T
      */
@@ -73,6 +72,7 @@ final class DateTimeTruncate
     }
 
     /**
+     * @template T of DateTimeInterface
      * @param T $dateTime
      * @return T
      */
@@ -82,6 +82,7 @@ final class DateTimeTruncate
     }
 
     /**
+     * @template T of DateTimeInterface
      * @param T $dateTime
      * @return T
      */
@@ -91,6 +92,7 @@ final class DateTimeTruncate
     }
 
     /**
+     * @template T of DateTimeInterface
      * @param T $dateTime
      * @return T
      */
@@ -100,6 +102,7 @@ final class DateTimeTruncate
     }
 
     /**
+     * @template T of DateTimeInterface
      * @param T $dateTime
      * @return T
      */
@@ -109,6 +112,7 @@ final class DateTimeTruncate
     }
 
     /**
+     * @template T of DateTimeInterface
      * @param T $dateTime
      * @return T
      */
@@ -118,6 +122,7 @@ final class DateTimeTruncate
     }
 
     /**
+     * @template T of DateTimeInterface
      * @param T $dateTime
      * @return T
      */
@@ -127,6 +132,7 @@ final class DateTimeTruncate
     }
 
     /**
+     * @template T of DateTimeInterface
      * @param T $dateTime
      * @return T
      */
@@ -136,6 +142,7 @@ final class DateTimeTruncate
     }
 
     /**
+     * @template T of DateTimeInterface
      * @param T $dateTime
      * @return T
      */
@@ -145,6 +152,7 @@ final class DateTimeTruncate
     }
 
     /**
+     * @template T of DateTimeInterface
      * @param T $dateTime
      * @return T
      */

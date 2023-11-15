@@ -16,6 +16,6 @@ var_dump($d);
 $d = new CarbonImmutable();
 var_dump(DateTimeTruncate::toHours($d));
 
-$d = new Carbon();
-DateTimeTruncate::toMilliseconds($d);
-var_dump($d);
+$c = new Carbon();
+DateTimeTruncate::toMilliseconds($c)->locale;
+var_dump($c);
