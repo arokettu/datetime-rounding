@@ -1,5 +1,5 @@
 {
-    "name": "arokettu/datetime-round",
+    "name": "arokettu/datetime-rounding",
     "config": {
         "allow-plugins": {
             "dealerdirect/phpcodesniffer-composer-installer": true
