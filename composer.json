@@ -1,5 +1,21 @@
 {
     "name": "arokettu/datetime-rounding",
+    "type": "library",
+    "license": "MIT",
+    "description": "DateTime rounding helper",
+    "keywords": ["datetime", "rounding"],
+    "homepage": "https://sandfox.dev/php/datetime-rounding.html",
+    "authors": [{
+        "name": "Anton Smirnov",
+        "homepage": "https://sandfox.me/",
+        "email": "sandfox@sandfox.me",
+        "role": "maintainer"
+    }],
+    "support": {
+        "issues": "https://gitlab.com/sandfox/datetime-rounding/-/issues",
+        "source": "https://gitlab.com/sandfox/datetime-rounding",
+        "chat": "https://gitter.im/arokettu/community"
+    },
     "config": {
         "allow-plugins": {
             "dealerdirect/phpcodesniffer-composer-installer": true
