@@ -9,7 +9,7 @@
         "name": "Anton Smirnov",
         "homepage": "https://sandfox.me/",
         "email": "sandfox@sandfox.me",
-        "role": "maintainer"
+        "role": "developer"
     }],
     "support": {
         "issues": "https://gitlab.com/sandfox/datetime-rounding/-/issues",
