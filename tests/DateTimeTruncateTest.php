@@ -131,27 +131,27 @@ class DateTimeTruncateTest extends TestCase
         $dtTrunc = DateTimeTruncate::toDays($dt);
         self::assertEquals('2023-11-14T00:00:00.000000+00:00', $dtTrunc->format($f));
         self::assertEquals('2023-11-14T22:28:59.596209+00:00', $dt->format($f)); // check immutable
-        self::assertEquals(DateTimeImmutable::class, get_class($dtTrunc));
+        self::assertEquals(DateTimeImmutable::class, \get_class($dtTrunc));
 
         // dt mutable
         $dt = new DateTime('2023-11-14T22:28:59.596209+00:00');
         $dtTrunc = DateTimeTruncate::toDays($dt);
         self::assertEquals('2023-11-14T00:00:00.000000+00:00', $dtTrunc->format($f));
         self::assertEquals('2023-11-14T00:00:00.000000+00:00', $dt->format($f)); // check mutable
-        self::assertEquals(DateTime::class, get_class($dtTrunc));
+        self::assertEquals(DateTime::class, \get_class($dtTrunc));
 
         // carbon immutable
         $dt = @new CarbonImmutable('2023-11-14T22:28:59.596209+00:00'); // external dev deprecation
         $dtTrunc = DateTimeTruncate::toDays($dt);
         self::assertEquals('2023-11-14T00:00:00.000000+00:00', $dtTrunc->format($f));
         self::assertEquals('2023-11-14T22:28:59.596209+00:00', $dt->format($f)); // check immutable
-        self::assertEquals(CarbonImmutable::class, get_class($dtTrunc));
+        self::assertEquals(CarbonImmutable::class, \get_class($dtTrunc));
 
         // carbon mutable
         $dt = @new Carbon('2023-11-14T22:28:59.596209+00:00'); // external dev deprecation
         $dtTrunc = DateTimeTruncate::toDays($dt);
         self::assertEquals('2023-11-14T00:00:00.000000+00:00', $dtTrunc->format($f));
         self::assertEquals('2023-11-14T00:00:00.000000+00:00', $dt->format($f)); // check mutable
-        self::assertEquals(Carbon::class, get_class($dtTrunc));
+        self::assertEquals(Carbon::class, \get_class($dtTrunc));
     }
 }
