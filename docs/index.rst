@@ -70,6 +70,6 @@ The library is available as open source under the terms of the `MIT License`_.
 .. |GitLab|     image:: https://img.shields.io/badge/get%20on-GitLab-informational.svg?style=flat-square&logo=gitlab
    :target:     https://gitlab.com/sandfox/datetime-rounding
 .. |Codeberg|   image:: https://img.shields.io/badge/get%20on-Codeberg-informational.svg?style=flat-square&logo=codeberg
-   :target:     https://codeberg.org/sandfox/php-json
+   :target:     https://codeberg.org/sandfox/datetime-rounding
 .. |Gitea|      image:: https://img.shields.io/badge/get%20on-Gitea-informational.svg?style=flat-square&logo=gitea
    :target:     https://sandfox.org/sandfox/datetime-rounding
